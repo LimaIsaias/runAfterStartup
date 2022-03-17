@@ -1,0 +1,14 @@
+// Funciona logo após execução do main.
+@Component
+@AllArgsConstructor
+public class RunAfterStartup {
+
+
+
+    @EventListener(ApplicationReadyEvent.class)
+    public void runAfterStartup() {
+        System.out.println("Yaaah, I am running........");
+    }
+}
+
+
